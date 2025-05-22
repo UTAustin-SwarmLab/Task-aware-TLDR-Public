@@ -1,0 +1,74 @@
+defaults:  
+  - _self_
+  - override hydra/hydra_logging: disabled
+  - override hydra/job_logging: disabled
+  
+hydra:
+  output_subdir: null
+  run:
+    dir: .
+
+# vllm:
+#   model_name: "Qwen/Qwen2.5-VL-72B-Instruct-AWQ" # "Qwen/Qwen2.5-VL-72B-Instruct-AWQ" "OpenGVLab/InternVL2_5-78B-AWQ"
+#   max_tokens: 7500
+#   tensor_parallel_size: 2
+#   enforce_eager: False
+#   images_per_prompt: 20
+#   gpu_memory_utilization: 0.8
+
+vllm:
+  model_name: "OpenGVLab/InternVL3-38B" # "Qwen/Qwen2.5-VL-72B-Instruct-AWQ" "OpenGVLab/InternVL2_5-78B-AWQ"
+  max_tokens: 9500
+  tensor_parallel_size: 2
+  enforce_eager: False
+  images_per_prompt: 20
+  gpu_memory_utilization: 0.9
+
+# AIConfVideo:
+#   paperlist_root: "/home/undergrads-admin/ta-tldr/"
+#   CORPUS_FROM: "tldr"
+#   max_num_slides: 20
+#   SAMPLE_VIDEO_NUM: 160
+#   seed: 42
+#   tf_idf:
+#     top_k: !!null
+#     cutoff_thres: 0.0005
+#     max_df: 0.1 # Ignore terms that appear in more than X% of documents. 0.1 for tldr.
+#     min_df: 2  # Ignore terms that appear in fewer than 2 documents. 2 for tldr.
+
+# AIConfVideo:
+#   paperlist_root: "/nas/pohan/datasets/AIConfVideo/"
+#   CORPUS_FROM: "aware"
+#   max_num_slides: 20
+#   SAMPLE_VIDEO_NUM: 160
+#   seed: 42
+#   tf_idf:
+#     top_k: !!null
+#     cutoff_thres: 0.0035
+#     max_df: 0.1 # Ignore terms that appear in more than X% of documents.
+#     min_df: 2  # Ignore terms that appear in fewer than 2 documents.
+
+AIConfVideo:
+  paperlist_root: "/nas/pohan/datasets/AIConfVideo/"
+  CORPUS_FROM: "agnostic"  # "agnostic" or "aware" or "response0" or "response1" ...
+  max_num_slides: 20
+  SAMPLE_VIDEO_NUM: 160
+  seed: 42
+  div_response: 3
+  tf_idf:
+    top_k: !!null
+    cutoff_thres: 0.0025
+    max_df: 0.1 # Ignore terms that appear in more than X% of documents.
+    min_df: 1  # Ignore terms that appear in fewer than 2 documents.
+
+# AIConfVideo:
+#   paperlist_root: "/nas/pohan/datasets/AIConfVideo/" # "/home/undergrads-admin/ta-tldr/"
+#   CORPUS_FROM: "CoT"
+#   max_num_slides: 20
+#   SAMPLE_VIDEO_NUM: 160
+#   seed: 42
+#   tf_idf:
+#     top_k: !!null
+#     cutoff_thres: 0.0025
+#     max_df: 0.1 # Ignore terms that appear in more than X% of documents.
+#     min_df: 1  # Ignore terms that appear in fewer than 2 documents.
