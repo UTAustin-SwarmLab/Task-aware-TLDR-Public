@@ -1,0 +1,30 @@
+defaults:  
+  - _self_
+  - override hydra/hydra_logging: disabled
+  - override hydra/job_logging: disabled
+
+hydra:
+  output_subdir: null
+  run:
+    dir: .
+
+vllm:
+  model_name: "Qwen/Qwen2.5-VL-72B-Instruct-AWQ" # "Qwen/Qwen2.5-VL-72B-Instruct-AWQ" "OpenGVLab/InternVideo2_5_Chat_8B"
+  max_tokens: 12000
+  tensor_parallel_size: 2
+  enforce_eager: False
+  images_per_prompt: 32
+  gpu_memory_utilization: 0.85
+
+LongVideoBench:
+  seed: 42
+  dataset_root: "/nas/pohan/datasets/LongVideoBench/"
+  CORPUS_FROM: "response"  # "response" or "CoT"
+  N: 150
+  temperatures: [0, 0.5, 1, 1.25, 1.5]
+  duration: [30, 500]
+  tf_idf:
+    top_k: !!null
+    cutoff_thres: 0.006
+    max_df: 0.5 # Ignore terms that appear in more than X% of documents.
+    min_df: 1  # Ignore terms that appear in fewer than 2 documents.

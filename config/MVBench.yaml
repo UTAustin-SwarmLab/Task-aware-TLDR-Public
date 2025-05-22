@@ -1,0 +1,34 @@
+defaults:  
+  - _self_
+  - override hydra/hydra_logging: disabled
+  - override hydra/job_logging: disabled
+
+hydra:
+  output_subdir: null
+  run:
+    dir: .
+
+vllm:
+  model_name: "Qwen/Qwen2.5-VL-72B-Instruct-AWQ" # "Qwen/Qwen2.5-VL-72B-Instruct-AWQ" "OpenGVLab/InternVL2_5-78B-AWQ"
+  max_tokens: 10000
+  tensor_parallel_size: 2
+  enforce_eager: False
+  images_per_prompt: 20
+  gpu_memory_utilization: 0.80
+
+MVBench:
+  seed: 42
+  dataset_root: "/nas/pohan/datasets/MVBench/"
+  CORPUS_FROM: "response"  # "response" or "CoT"
+  N: 30
+  temperatures: [0, 0.5, 1, 1.25, 1.5]
+  subset_map:
+    object_existence: "/nas/pohan/datasets/MVBench/videos/clevrer/video_validation/"
+    unexpected_action: "/nas/pohan/datasets/MVBench/videos/FunQA_test/test/"
+    action_sequence: "/nas/pohan/datasets/MVBench/videos/star/Charades_v1_480/"
+    object_interaction: "/nas/pohan/datasets/MVBench/videos/star/Charades_v1_480/"
+  tf_idf:
+    top_k: !!null
+    cutoff_thres: 0.01
+    max_df: 0.3 # Ignore terms that appear in more than X% of documents.
+    min_df: 1  # Ignore terms that appear in fewer than 2 documents.
