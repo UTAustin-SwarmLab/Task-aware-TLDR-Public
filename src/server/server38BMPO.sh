@@ -1,8 +1,6 @@
 #!/bin/bash
 
-# one 448x448 image = 256 tokens
-
-MODEL="OpenGVLab/InternVL2_5-38B-MPO" # 4, 26, 38, 78B, OpenGVLab/InternVL2_5-38B-MPO
+MODEL="OpenGVLab/InternVL2_5-8B-MPO"
 export CUDA_DEVICE_ORDER="PCI_BUS_ID"
 export NCCL_P2P_DISABLE=1
 export CUDA_VISIBLE_DEVICES="0,1,2,3"
