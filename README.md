@@ -42,7 +42,7 @@ Our results show that video captions selected by VIBE can achieve a better trade
 ```
 
 ## Prerequisites
-
+See `requirements.txt` for the packages and their versions.
 
 ## Key Utility Functions
 
@@ -86,9 +86,9 @@ The `src/utils/` directory contains several important utility modules:
 
 ## Model Configuration
 The project supports multiple large language models for video understanding:
+- InternVL-2.5-8B-MPO
 - InternVL3-38B
 - Qwen2.5-VL-72B-Instruct-AWQ
-- InternVL2_5-78B-AWQ
 You may modify the config files (in folder `/config/`) to run any other models supported by vLLM.
 
 ## Citation
