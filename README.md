@@ -2,7 +2,8 @@
 
 This repository contains source code for **VIBE: Video-to-Text Information Bottleneck Evaluation for TL;DR**
 
-[Paper](TBD)
+[Paper](https://arxiv.org/abs/2505.17423))
+
 [Dataset (LearningPaper24)](https://huggingface.co/datasets/vivianchen98/LearningPaper24)
 
 ## TL;DR
@@ -94,6 +95,13 @@ You may modify the config files (in folder `/config/`) to run any other models s
 
 ## Citation
 ```
-
+@misc{chen2025vibevideototextinformationbottleneck,
+      title={VIBE: Video-to-Text Information Bottleneck Evaluation for TL;DR}, 
+      author={Shenghui Chen and Po-han Li and Sandeep Chichali and Ufuk Topcu},
+      year={2025},
+      eprint={2505.17423},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2505.17423}, 
+}
 ```
-
