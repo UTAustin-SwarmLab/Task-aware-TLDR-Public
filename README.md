@@ -2,7 +2,7 @@
 
 This repository contains source code for **VIBE: Video-to-Text Information Bottleneck Evaluation for TL;DR**
 
-[Paper](https://arxiv.org/abs/2505.17423))
+[Paper](https://arxiv.org/abs/2505.17423)
 
 [Dataset (LearningPaper24)](https://huggingface.co/datasets/vivianchen98/LearningPaper24)
 
