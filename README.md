@@ -2,11 +2,7 @@
 
 This repository contains source code for **VIBE: Video-to-Text Information Bottleneck Evaluation for TL;DR**
 
-[Project Website](https://vivianchen98.github.io/VIBE_website/)
-
-[Paper](https://arxiv.org/abs/2505.17423)
-
-[Dataset (LearningPaper24)](https://huggingface.co/datasets/vivianchen98/LearningPaper24)
+[Project Website](https://vivianchen98.github.io/VIBE_website/)  [Paper](https://arxiv.org/abs/2505.17423)  [Dataset (LearningPaper24)](https://huggingface.co/datasets/vivianchen98/LearningPaper24)
 
 ## TL;DR
 VIBE is an annotation-free method that selects video summaries by scoring task relevance and visual grounding without retraining. Human studies show VIBE improves accuracy and reduces response time over naive VLM summaries and full videos across three datasets.
