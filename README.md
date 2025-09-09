@@ -2,6 +2,8 @@
 
 This repository contains source code for **VIBE: Video-to-Text Information Bottleneck Evaluation for TL;DR**
 
+[Project Website](https://vivianchen98.github.io/VIBE_website/)
+
 [Paper](https://arxiv.org/abs/2505.17423)
 
 [Dataset (LearningPaper24)](https://huggingface.co/datasets/vivianchen98/LearningPaper24)
@@ -49,6 +51,10 @@ See `requirements.txt` for the packages and their versions.
 ## Key Utility Functions
 
 The `src/utils/` directory contains several important utility modules:
+
+### VIBE Score Calculation
+- 'src/<dataset>_script/*_ib_score.py' contains the core code to calculate grounding and utility scores.
+- 'src/<dataset>_script/vllm_generate_summary.py' contains the main function to generate captions for videos using the vllm package.
 
 ### Text Processing
 - `tf_idf.py`: TF-IDF based keyword extraction from text corpus
