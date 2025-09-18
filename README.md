@@ -99,13 +99,11 @@ You may modify the config files (in folder `/config/`) to run any other models s
 
 ## Citation
 ```
-@misc{chen2025vibevideototextinformationbottleneck,
-      title={VIBE: Video-to-Text Information Bottleneck Evaluation for TL;DR}, 
-      author={Shenghui Chen and Po-han Li and Sandeep Chichali and Ufuk Topcu},
-      year={2025},
-      eprint={2505.17423},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2505.17423}, 
+@inproceedings{chen2025vibevideototextinformationbottleneck,
+    title={\${\textbackslash}mathtt\{{VIBE}\}\$: Video-to-Text Information Bottleneck Evaluation for {TL};{DR}},
+    author={Shenghui Chen and Po-han Li and Sandeep Chichali and Ufuk Topcu},
+    booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems},
+    year={2025},
+    url={https://openreview.net/forum?id=C35FCYZBXp}
 }
 ```
