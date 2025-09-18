@@ -100,7 +100,7 @@ You may modify the config files (in folder `/config/`) to run any other models s
 ## Citation
 ```
 @inproceedings{chen2025vibevideototextinformationbottleneck,
-    title={\${\textbackslash}mathtt\{{VIBE}\}\$: Video-to-Text Information Bottleneck Evaluation for {TL};{DR}},
+    title={VIBE: Annotation-Free Video-to-Text Information Bottleneck Evaluation for {TL};{DR}},
     author={Shenghui Chen and Po-han Li and Sandeep Chichali and Ufuk Topcu},
     booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems},
     year={2025},
