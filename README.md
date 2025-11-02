@@ -20,9 +20,9 @@ VIBE is an annotation-free method that selects video summaries by scoring task r
 
 ## System Plot and Major Results
 
-![system_graph](https://github.com/UTAustin-SwarmLab/Task-aware-TLDR/blob/main/assets/TLDR_system_plot.png)
+![system_graph](https://github.com/UTAustin-SwarmLab/Task-aware-TLDR-Public/blob/main/assets/TLDR_system_plot.png)
 
-![main_results](https://github.com/UTAustin-SwarmLab/Task-aware-TLDR/blob/main/assets/table_results.png)
+![main_results](https://github.com/UTAustin-SwarmLab/Task-aware-TLDR-Public/blob/main/assets/table_results.png)
 Our results show that video captions selected by VIBE can achieve a better trade-off between faster human response time and task accuracy.
 
 ## Project Structure
